@@ -26,10 +26,10 @@
   margin-left: 93px;
 }
 
-.navigation__item .nav__link {
-  padding: 32px 0px;
-  display: block;
-}
+// .navigation__item .nav__link {
+//   padding: 32px 0px;
+//   display: block;
+// }
 
 .navigation__item {
   position: relative;
@@ -42,6 +42,8 @@
 
 .nav__link {
   display: inline-block;
+
+  padding: 32px 0px;
 
   font-weight: 500;
   color: var(--primery-text-color);
