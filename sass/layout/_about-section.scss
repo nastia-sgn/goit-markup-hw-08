@@ -21,6 +21,9 @@
     width: calc(100% / 2 - 30px);
     margin-right: 30px;
   }
+  @media screen and (min-widht: 1200px) {
+    width: calc(100% / 4 - 30px);
+  }
 }
 
 .about__box {

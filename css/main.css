@@ -380,6 +380,12 @@ body {
   }
 }
 
+@media screen and (min-widht: 1200px) {
+  .about__item {
+    width: calc(100% / 4 - 30px);
+  }
+}
+
 .about__box {
   display: flex;
   align-items: center;
