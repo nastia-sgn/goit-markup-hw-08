@@ -15,7 +15,7 @@
 .header__container,
 .navigation,
 .site-nav,
-.contacts, .contacts__link, .contacts__item--tel, .social-icons__link, .doing__box, .clients, .follow__btn, .modal__close-btn, .form__label-icon, .form__label-icon span {
+.contacts, .contacts__link, .contacts__item--tel, .social-icons__link, .doing__box, .follow__btn, .modal__close-btn, .form__label-icon, .form__label-icon span {
   display: flex;
   align-items: center;
 }
@@ -547,11 +547,18 @@ body {
 }
 
 .clients {
-  justify-content: center;
+  margin-right: -30px;
 }
 
 .clients__item + .clients__item {
-  margin-left: 30px;
+  width: calc(100% / 2 - 15px);
+  margin-right: 30px;
+}
+
+@media screen and (min-width: 768px) {
+  .clients__item + .clients__item {
+    width: calc(100% / 3 - 30px);
+  }
 }
 
 .clients__link {
