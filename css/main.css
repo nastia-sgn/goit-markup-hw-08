@@ -329,18 +329,16 @@ body {
   background-color: #f5f4fa;
 }
 
-.people {
-  display: flex;
-}
-
 .people__item {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+  align-items: center;
+  max-width: 450px;
 }
 
 .people__item:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .people__thumb {
@@ -412,7 +410,7 @@ body {
   background-size: contain;
   align-items: center;
   width: 100%;
-  height: auto;
+  height: 400px;
   padding: 0;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-mob-1x.jpg);
 }
@@ -550,6 +548,13 @@ body {
   margin-right: -30px;
 }
 
+@media screen and (min-width: 768px) {
+  .clients {
+    display: flex;
+    justify-content: center;
+  }
+}
+
 .clients__item + .clients__item {
   width: calc(100% / 2 - 15px);
   margin-right: 30px;
@@ -595,9 +600,11 @@ body {
   background-color: #2f303a;
 }
 
-.footer-container {
-  display: flex;
-  align-items: baseline;
+@media screen and (min-widht: 1200px) {
+  .footer-container {
+    display: flex;
+    align-items: baseline;
+  }
 }
 
 .footer__logo {
@@ -651,7 +658,9 @@ body {
 
 /* -----icons------------------- */
 .section-join {
-  margin-left: 70px;
+  margin-top: 60px;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 /* common for next section */
@@ -673,8 +682,11 @@ body {
   justify-content: center;
 }
 
-.section-adress {
-  flex-grow: 1;
+.section-address {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
 }
 
 .join__list {
@@ -711,9 +723,17 @@ body {
 /* -------------footer input-------------- */
 .follow {
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
-  margin-left: 93px;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+@media screen and (min-widht: 1200px) {
+  .follow {
+    align-items: flex-end;
+    justify-content: center;
+    margin-left: 93px;
+  }
 }
 
 .follow-form {
@@ -734,12 +754,13 @@ body {
 
 .follow-form input {
   /* margin-right: 12px; */
-  width: 358px;
   height: 50px;
   border-radius: 4px;
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
+  margin-bottom: 20px;
+  width: 450px;
 }
 
 input::placeholder {

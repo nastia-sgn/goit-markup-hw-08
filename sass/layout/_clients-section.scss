@@ -2,6 +2,10 @@
   // @extend %display;
   // justify-content: center;
   margin-right: -30px;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    justify-content: center;
+  }
 }
 
 .clients__item + .clients__item {
