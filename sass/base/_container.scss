@@ -1,7 +1,7 @@
 .container {
   // width: 1200px;
-  // padding-left: 15px;
-  // padding-right: 15px;
+  padding-left: 15px;
+  padding-right: 15px;
   // margin-left: auto;
   // margin-right: auto;
   // outline: 2px solid tomato;
@@ -11,10 +11,10 @@
   margin: 0 auto;
 
   @media screen and (min-widht: 480px) {
-    width: 480px;
+    width: 450px;
   }
   @media screen and (min-widht: 768px) {
-    width: 768px;
+    width: 738px;
   }
   @media screen and (min-widht: 1200px) {
     width: 1200px;
