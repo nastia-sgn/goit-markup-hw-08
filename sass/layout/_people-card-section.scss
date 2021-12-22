@@ -3,7 +3,9 @@
 }
 
 .people {
-  // display: flex;
+  @media screen and (min-widht: 768px) {
+    display: flex;
+  }
 }
 
 .people__item {

@@ -21,10 +21,12 @@
   margin-bottom: 4px;
 
   font-weight: 400;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.16;
   letter-spacing: 0.01em;
   color: var(--second-text-color);
+
+  font-size: 12px;
 }
 
 .icons-wrap {
@@ -102,10 +104,12 @@ textarea {
   margin-bottom: 30px;
 
   font-weight: 400;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--second-text-color);
+
+  font-size: 12px;
 }
 
 .form__checkbox {
@@ -160,14 +164,16 @@ textarea {
 }
 .form__conditions {
   font-weight: 400;
-  font-size: 14px;
+  // font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: underline;
   margin-left: 2px;
-}
 
+  font-size: 12px;
+}
+// button------------
 .modal-sbm-btn {
   display: flex;
   align-items: center;
