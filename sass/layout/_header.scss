@@ -7,14 +7,23 @@
 .contacts {
   @extend %display;
 }
-// mobile menu--------------------
+
 .header__container {
   height: 60px;
 }
 
-.navigation,
-.contacts {
-  display: none;
+// mobile menu--------------------
+
+@media screen and (max-width: 767px) {
+  .navigation,
+  .contacts {
+    display: none;
+  }
+}
+
+.is-hidden {
+  opacity: 0;
+  pointer-events: none;
 }
 
 .header__menu-btn {
