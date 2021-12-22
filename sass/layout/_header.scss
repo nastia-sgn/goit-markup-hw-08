@@ -157,6 +157,10 @@
 
 .navigation {
   margin-left: 93px;
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-right: 84px;
+  }
 }
 
 // .navigation__item .nav__link {
@@ -233,7 +237,14 @@
 }
 
 .contacts {
-  margin-left: auto;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-left: auto;
+  }
 }
 
 .contacts__link {
@@ -257,8 +268,10 @@
 }
 
 .contacts__item--tel {
-  margin-left: 50px;
-  @extend %display;
+  margin-top: 10px;
+  @media screen and (min-width: 1200px) {
+    margin-left: 50px;
+  }
 }
 
 // .contacts__icon-tel {
