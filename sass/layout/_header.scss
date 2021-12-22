@@ -10,6 +10,9 @@
 
 .header__container {
   height: 60px;
+  @media screen and (min-width: 768px) {
+    height: 80px;
+  }
 }
 
 // mobile menu--------------------
@@ -268,7 +271,9 @@
 }
 
 .contacts__item--tel {
-  margin-top: 10px;
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    margin-top: 10px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 50px;
   }

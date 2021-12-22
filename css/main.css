@@ -122,6 +122,12 @@ body {
   height: 60px;
 }
 
+@media screen and (min-width: 768px) {
+  .header__container {
+    height: 80px;
+  }
+}
+
 @media screen and (max-width: 767px) {
   .navigation,
   .contacts {
@@ -365,8 +371,10 @@ body {
   margin-right: 10px;
 }
 
-.contacts__item--tel {
-  margin-top: 10px;
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .contacts__item--tel {
+    margin-top: 10px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
