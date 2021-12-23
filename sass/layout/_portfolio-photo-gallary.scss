@@ -1,12 +1,15 @@
 .card {
-  // display: flex;
-  // flex-wrap: wrap;
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
 
-  // margin-right: -30px;
-  // margin-bottom: -30px;
-
+    margin-right: -30px;
+    margin-bottom: -30px;
+  }
   & .card__item {
-    // width: calc(100% / 3 - 30px);
+    @media screen and (min-width: 1200px) {
+      width: calc(100% / 3 - 30px);
+    }
   }
 }
 
@@ -19,12 +22,16 @@
   border-bottom: 1px solid#eeeeee;
   border-left: 1px solid#eeeeee;
 
-  // &:nth-child(3n) {
-  //   margin-right: 0;
-  // }
   width: 450px;
+
   @media screen and (min-width: 768px) {
-    width: 354px;
+    width: calc(100% / 2 - 30px);
+    margin-right: 30px;
+  }
+  @media screen and (min-width: 1200px) {
+    &:nth-child(3n) {
+      margin-right: 0;
+    }
   }
 }
 
