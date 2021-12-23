@@ -138,6 +138,14 @@
   &:not(:last-child) {
     margin-right: 10px;
   }
+
+  &:not(:last-child)::after {
+    content: '';
+    width: 22px;
+    margin-left: 10px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    transform: rotate(90deg);
+  }
 }
 .menu__social-link {
   color: var(--accent-color);
