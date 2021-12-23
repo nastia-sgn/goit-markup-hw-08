@@ -406,9 +406,10 @@ body {
   background-color: #f5f4fa;
 }
 
-@media screen and (min-widht: 768px) {
+@media screen and (min-width: 768px) {
   .people {
     display: flex;
+    flex-wrap: wrap;
   }
 }
 
@@ -416,12 +417,34 @@ body {
   background-color: #ffffff;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
-  align-items: center;
-  max-width: 450px;
 }
 
-.people__item:not(:last-child) {
-  margin-bottom: 30px;
+@media screen and (min-width: 480px) and (max-width: 767px) {
+  .people__item {
+    align-items: center;
+    max-width: 450px;
+  }
+  .people__item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .people__item {
+    width: calc(100% / 2 - 30px);
+  }
+  .people__item:nth-child(2n) {
+    margin-left: 30px;
+  }
+  .people__item:nth-child(-n + 2) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .people__item:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .people__thumb {
@@ -632,6 +655,12 @@ body {
 
 .section--padding {
   padding-top: 0;
+}
+
+@media screen and (min-width: 480px) and (max-width: 1199px) {
+  .section--padding {
+    display: none;
+  }
 }
 
 .doing {
@@ -989,6 +1018,8 @@ input::placeholder {
 }
 
 .buttons {
+  display: flex;
+  flex-wrap: wrap;
   margin-bottom: 40px;
 }
 
@@ -1000,8 +1031,18 @@ input::placeholder {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .buttons {
+    margin-bottom: 50px;
+  }
+}
+
 .button__item:not(:last-child) {
   margin-right: 9px;
+}
+
+.button__item:nth-child(-n + 3) {
+  margin-bottom: 15px;
 }
 
 .button__btn {
