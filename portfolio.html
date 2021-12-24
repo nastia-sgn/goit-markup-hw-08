@@ -134,7 +134,22 @@
             <li class="card__item">
               <a class="card__link" href="">
                 <div class="card__wrap">
-                  <img src="./images/port1.jpg" alt="ноутбук" width="370" />
+                  <picture>
+                    <source
+                      srcset="./images/port1-dsk-1x.jpg 1x, ./images/port1-dsk-2x.jpg 2x"
+                      media="(min-width:1200px)"
+                    />
+                    <source
+                      srcset="./images/port1-tab-1x.jpg 1x, ./images/port1-tab-2x.jpg 2x"
+                      media="(min-width:768px)"
+                    />
+                    <source
+                      srcset="./images/port1-mob-1x.jpg 1x, ./images/port1-mob-2x.jpg 2x"
+                      media="(min-width:320px)"
+                    />
+                    <img src="./images/port1-dsk-1x.jpg" alt="ноутбук" />
+                  </picture>
+                  <!-- <img src="./images/port1-dsk-1x.jpg" alt="ноутбук"/> -->
 
                   <p class="card__overlay-text">
                     Технокряк это современная площадка распространения коронавируса. Компании
