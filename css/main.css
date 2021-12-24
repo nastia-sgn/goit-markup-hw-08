@@ -684,7 +684,7 @@ body {
   padding-top: 0;
 }
 
-@media screen and (min-width: 480px) and (max-width: 1199px) {
+@media screen and (max-width: 1199px) {
   .section--padding {
     display: none;
   }
