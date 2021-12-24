@@ -1034,6 +1034,12 @@ input::placeholder {
   border-radius: 4px;
 }
 
+@media screen and (min-width: 1200px) {
+  .follow__btn {
+    margin-top: 15px;
+  }
+}
+
 .follow__svg-plane {
   fill: currentColor;
   width: 24px;

@@ -228,6 +228,10 @@ input::placeholder {
   background-color: var(--accent-color);
   border: transparent;
   border-radius: 4px;
+
+  @media screen and (min-width: 1200px) {
+    margin-top: 15px;
+  }
 }
 
 .follow__svg-plane {
