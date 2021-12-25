@@ -761,6 +761,9 @@ body {
   .clients__item:nth-child(2n + 1) {
     margin-left: 0;
   }
+  .clients__item:nth-child(n + 5) {
+    margin-bottom: 0;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -1175,6 +1178,9 @@ input::placeholder {
 @media screen and (min-width: 1200px) {
   .card__item:nth-child(3n) {
     margin-right: 0;
+  }
+  .card__item:nth-child(n + 7) {
+    margin-bottom: 0;
   }
 }
 
