@@ -418,10 +418,6 @@ body {
   background-color: #f5f4fa;
 }
 
-.people {
-  margin-right: -30px;
-}
-
 @media screen and (min-width: 768px) {
   .people {
     display: flex;
@@ -449,8 +445,8 @@ body {
   .people__item {
     width: calc(100% / 2 - 30px);
   }
-  .people__item:nth-child(2n) {
-    margin-left: 30px;
+  .people__item {
+    margin-right: 30px;
   }
   .people__item:nth-child(-n + 2) {
     margin-bottom: 30px;
