@@ -8,14 +8,18 @@
   @media screen and (min-width: 1200px) {
     display: flex;
     align-items: baseline;
+    justify-content: space-between;
   }
 }
 
+.footer-wrap {
+  margin-bottom: 60px;
+}
 @media screen and (min-width: 768px) and (max-width: 1199px) {
   .footer-wrap {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content: space-around;
+    align-items: baseline;
     margin-bottom: 60px;
   }
 }
@@ -77,10 +81,12 @@
 /* -----icons------------------- */
 .section-join {
   // margin-left: 70px;
-  margin-top: 60px;
-  margin-bottom: 60px;
+  // margin-top: 60px;
   text-align: center;
 
+  @media screen and (max-width: 767px) {
+    margin-top: 60px;
+  }
   @media screen and (min-width: 1200px) {
     margin-left: 70px;
   }
@@ -171,8 +177,19 @@
 .follow-form {
   display: flex;
   flex-direction: column;
-  margin-right: 12px;
+  @media screen and (max-width: 1199px) {
+    width: 100%;
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    align-items: center;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
+
 .follow__label {
   margin-bottom: 20px;
 
@@ -185,9 +202,6 @@
 }
 
 .follow-form input {
-  /* margin-right: 12px; */
-
-  // width: 358px;
   height: 50px;
 
   border-radius: 4px;
@@ -196,8 +210,10 @@
   background-color: transparent;
   margin-bottom: 20px;
 
-  width: 450px;
-
+  width: 100%;
+  @media screen and (min-width: 768px) {
+    width: 450px;
+  }
   @media screen and (min-width: 1200px) {
     width: 358px;
   }
