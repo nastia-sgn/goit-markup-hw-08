@@ -839,8 +839,10 @@ body {
   }
 }
 
-.footer-wrap {
-  margin-bottom: 60px;
+@media screen and (max-width: 1199px) {
+  .footer-wrap {
+    margin-bottom: 60px;
+  }
 }
 
 @media screen and (min-width: 768px) and (max-width: 1199px) {
@@ -848,7 +850,6 @@ body {
     display: flex;
     justify-content: space-around;
     align-items: baseline;
-    margin-bottom: 60px;
   }
 }
 
@@ -998,6 +999,7 @@ body {
   .follow {
     flex-direction: row;
     justify-content: center;
+    align-items: flex-end;
     margin-left: 93px;
   }
 }
@@ -1041,8 +1043,13 @@ body {
   border-width: 1px;
   border-color: rgba(255, 255, 255, 0.3);
   background-color: transparent;
-  margin-bottom: 20px;
   width: 100%;
+}
+
+@media screen and (max-width: 1199px) {
+  .follow-form input {
+    margin-bottom: 20px;
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -1077,12 +1084,6 @@ input::placeholder {
   background-color: var(--accent-color);
   border: transparent;
   border-radius: 4px;
-}
-
-@media screen and (min-width: 1200px) {
-  .follow__btn {
-    margin-top: 15px;
-  }
 }
 
 .follow__svg-plane {
