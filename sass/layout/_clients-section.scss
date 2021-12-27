@@ -1,6 +1,11 @@
 .clients {
   display: flex;
   flex-wrap: wrap;
+
+  @media screen and (max-width: 767px) {
+    margin-left: -30px;
+  }
+
   @media screen and (min-width: 768px) and (max-width: 1199px) {
     display: flex;
     flex-wrap: wrap;
